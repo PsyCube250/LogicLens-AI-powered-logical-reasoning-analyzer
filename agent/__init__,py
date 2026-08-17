@@ -1,0 +1,24 @@
+class AgentRouter:
+
+    def __init__(self):
+        self.classifier = ClaimClassifier()
+        self.fallacy = FallacyDetector()
+        self.bias = BiasDetector()
+        self.counterexample = CounterexampleGenerator()
+
+    def run(self, text):
+
+        claim = self.classifier.run(text)
+
+        result = {
+            "claim": claim
+        }
+
+        if claim["requires_counterexample"]:
+            result["counterexample"] = \
+                self.counterexample.run(text)
+
+        result["fallacy"] = self.fallacy.run(text)
+        result["bias"] = self.bias.run(text)
+
+        return result

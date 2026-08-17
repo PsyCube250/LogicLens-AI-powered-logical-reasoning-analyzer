@@ -1,0 +1,1002 @@
+[
+  {
+    "text": "该桥梁的设计荷载考虑了车辆通行、风力和地震等多种因素。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "冰淇淋销量和溺水事故同时上升，所以吃冰淇淋导致溺水。",
+    "label": "invalid",
+    "fallacy": "correlation vs causation"
+  },
+  {
+    "text": "诺贝尔奖得主都投资了这个项目，因此这个项目绝对安全。",
+    "label": "invalid",
+    "fallacy": "appeal to authority"
+  },
+  {
+    "text": "城市规划应综合考虑居住、商业、交通和绿地等多种功能需求。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该组织章程规定了决策程序、成员资格和财务管理规则。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "工业革命始于18世纪的英国，以蒸汽机的广泛应用为标志。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "我只看那些支持我投资决定的分析报告，所以我的投资决策总是正确的。",
+    "label": "invalid",
+    "fallacy": "confirmation bias"
+  },
+  {
+    "text": "我只采访了对该项目满意的用户，所以用户满意度是100%。",
+    "label": "invalid",
+    "fallacy": "confirmation bias"
+  },
+  {
+    "text": "我专门寻找支持我观点的研究，所以我的观点有大量科学依据。",
+    "label": "invalid",
+    "fallacy": "confirmation bias"
+  },
+  {
+    "text": "该投资组合通过分散投资于不同资产类别，降低了非系统性风险。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "我采访的所有上市公司CEO都每天工作14小时，所以长时间工作是成为CEO的必要条件。",
+    "label": "invalid",
+    "fallacy": "survivorship bias"
+  },
+  {
+    "text": "实验室条件下，该化学反应在特定温度和压强下产生了预期的产物。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "我关注的媒体都报道了这个政策的成功，所以这项政策没有缺点。",
+    "label": "invalid",
+    "fallacy": "confirmation bias"
+  },
+  {
+    "text": "你不赞成增加军费，那就是支持敌人入侵。",
+    "label": "invalid",
+    "fallacy": "false dichotomy"
+  },
+  {
+    "text": "机器学习模型的性能取决于训练数据的质量、特征工程和模型选择。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "这个传统应该保留，因为它是传统；它是传统，所以应该保留。",
+    "label": "invalid",
+    "fallacy": "circular reasoning"
+  },
+  {
+    "text": "所有成功上市的初创公司都曾拒绝过早期收购要约，因此拒绝收购是上市的前提。",
+    "label": "invalid",
+    "fallacy": "survivorship bias"
+  },
+  {
+    "text": "我用的三台苹果手机都出了问题，因此苹果产品质量极差。",
+    "label": "invalid",
+    "fallacy": "hasty generalization"
+  },
+  {
+    "text": "演绎推理的有效性仅取决于推理形式，与前提内容的真假无关。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "这家公司的CEO是哈佛毕业的，所以这家公司的产品一定高质量。",
+    "label": "invalid",
+    "fallacy": "appeal to authority"
+  },
+  {
+    "text": "公共交通系统的改善可以减少私人汽车使用，从而可能缓解城市交通拥堵。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该文学作品的创作背景与作者的个人经历和时代环境密切相关。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "公共卫生事件的应对需要跨部门协作，包括医疗、交通和信息发布等多个环节。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "睡眠质量好的人普遍收入更高，所以睡得好就能赚更多钱。",
+    "label": "invalid",
+    "fallacy": "correlation vs causation"
+  },
+  {
+    "text": "她值得信赖，因为她从不说谎；她从不说谎，因为她值得信赖。",
+    "label": "invalid",
+    "fallacy": "circular reasoning"
+  },
+  {
+    "text": "该宪法修正案经过了法定的修宪程序，包括提案和批准两个阶段。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "这些百年企业都坚持传统经营模式，所以传统模式一定比创新更可靠。",
+    "label": "invalid",
+    "fallacy": "survivorship bias"
+  },
+  {
+    "text": "随机抽样调查显示，该地区65%的居民支持建设新的公共交通系统。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "允许无人驾驶汽车上路，最终人类将被禁止亲自驾驶任何车辆。",
+    "label": "invalid",
+    "fallacy": "slippery slope"
+  },
+  {
+    "text": "边际效用递减规律指出，连续消费同一种商品时，每增加一单位带来的满足感会逐渐减少。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "戴口罩期间流感病例减少，因此口罩能完全阻止所有呼吸道病毒传播。",
+    "label": "invalid",
+    "fallacy": "correlation vs causation"
+  },
+  {
+    "text": "如果不立即通过这项法案，社会秩序将完全瓦解。",
+    "label": "invalid",
+    "fallacy": "false dichotomy"
+  },
+  {
+    "text": "这个定义准确，因为它符合定义本身；它符合定义本身，所以是准确的。",
+    "label": "invalid",
+    "fallacy": "circular reasoning"
+  },
+  {
+    "text": "古代医书上说这种草药能治百病，所以它确实能治百病。",
+    "label": "invalid",
+    "fallacy": "appeal to authority"
+  },
+  {
+    "text": "通货膨胀率上升会降低货币的购买力，这是经济学的基本原理。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该法律条文明确规定了违法行为的构成要件和相应的法律责任。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该并购案需要经过反垄断审查，以确保不会实质性减少市场竞争。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "一旦开始监管网络言论，最终所有自由表达都会被彻底消灭。",
+    "label": "invalid",
+    "fallacy": "slippery slope"
+  },
+  {
+    "text": "你建议减少糖分摄入，就是要让食品工业彻底崩溃。",
+    "label": "invalid",
+    "fallacy": "strawman"
+  },
+  {
+    "text": "这位著名演员推荐了这个保健品，所以它一定有效。",
+    "label": "invalid",
+    "fallacy": "appeal to authority"
+  },
+  {
+    "text": "消费者价格指数(CPI)是衡量一篮子消费品和服务价格变化的常用指标。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "他无罪，因为法律说他无罪；法律说他无罪，因为他确实无罪。",
+    "label": "invalid",
+    "fallacy": "circular reasoning"
+  },
+  {
+    "text": "垃圾分类政策需要配套的回收处理设施，否则前端分类的效果会大打折扣。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该艺术流派的特点在于对光线和色彩的独特处理方式。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "我认识的每个成功人士都早起，所以早起是成功的关键。",
+    "label": "invalid",
+    "fallacy": "survivorship bias"
+  },
+  {
+    "text": "公司要么裁员30%，要么明年就会破产。",
+    "label": "invalid",
+    "fallacy": "false dichotomy"
+  },
+  {
+    "text": "使用某种APP的用户幸福感更高，所以这款APP能提升幸福感。",
+    "label": "invalid",
+    "fallacy": "correlation vs causation"
+  },
+  {
+    "text": "他支持放宽移民政策，显然是想让国家边境完全失控。",
+    "label": "invalid",
+    "fallacy": "strawman"
+  },
+  {
+    "text": "自由贸易理论认为，各国应专注于生产自己具有比较优势的商品。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "流行病学研究表明，吸烟与肺癌发病率之间存在剂量-反应关系。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该因果关系得到了纵向追踪研究的支持，排除了反向因果的可能性。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "如果接受远程办公，办公室就会消失，城市经济就会崩溃。",
+    "label": "invalid",
+    "fallacy": "slippery slope"
+  },
+  {
+    "text": "该算法的时间复杂度为O(n log n)，在大数据量下表现优于O(n²)的算法。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "一旦对富人加税，政府就会对中产阶级加税，最后所有人都会一贫如洗。",
+    "label": "invalid",
+    "fallacy": "slippery slope"
+  },
+  {
+    "text": "考古发现表明，该遗址曾是一个重要的古代贸易中心。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "临床试验第三阶段结果显示，疫苗的有效率达到了预设的主要终点指标。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "你不同意我的观点，就是在支持错误的一方。",
+    "label": "invalid",
+    "fallacy": "false dichotomy"
+  },
+  {
+    "text": "该城市夏季平均气温约为28摄氏度，冬季平均气温约为5摄氏度。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "根据财务报表，该公司的负债率在过去三年中保持稳定。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该产品的用户手册详细说明了安装步骤和注意事项。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "比尔·盖茨和扎克伯格都从哈佛辍学并成功了，所以辍学是通往成功的捷径。",
+    "label": "invalid",
+    "fallacy": "survivorship bias"
+  },
+  {
+    "text": "该行业报告分析了过去五年的投资数据，发现研发投入与专利产出呈正相关。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "你要么支持我们的政策，要么就是不爱国。",
+    "label": "invalid",
+    "fallacy": "false dichotomy"
+  },
+  {
+    "text": "软件测试包括单元测试、集成测试和系统测试等多个层次。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "海盗数量减少的同时全球气温上升，因此海盗减少导致全球变暖。",
+    "label": "invalid",
+    "fallacy": "correlation vs causation"
+  },
+  {
+    "text": "规模经济效应使得大批量生产能够降低单位产品的平均成本。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "最低工资标准的调整需要综合考虑物价水平、企业承受能力和就业影响等多方面因素。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "如果前提为真且推理形式有效，那么结论必然为真。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该博物馆周二至周日开放，周一闭馆进行展品维护。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该公司的现金流报告显示，其经营活动产生的现金流量足以覆盖短期债务。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "版本控制系统可以追踪代码的修改历史，便于协作开发和问题回溯。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "他是对的，因为他是专家；他是专家，因为他总是对的。",
+    "label": "invalid",
+    "fallacy": "circular reasoning"
+  },
+  {
+    "text": "教堂数量多的地区犯罪率也高，所以教堂导致犯罪。",
+    "label": "invalid",
+    "fallacy": "correlation vs causation"
+  },
+  {
+    "text": "文艺复兴时期，人文主义思想强调人的价值和尊严。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "定期体检有助于早期发现潜在的健康问题，从而提高治疗效果。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "我选择性引用了支持我立场的统计数据，所以数据完全支持我的结论。",
+    "label": "invalid",
+    "fallacy": "confirmation bias"
+  },
+  {
+    "text": "天文学观测使用光谱分析来确定恒星的化学成分和温度。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该系统atic review纳入了符合预定纳入标准的研究，并评估了各研究的偏倚风险。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "他是领导，因为团队需要他领导；团队需要他领导，因为他是领导。",
+    "label": "invalid",
+    "fallacy": "circular reasoning"
+  },
+  {
+    "text": "该司法解释明确了法律条文在特定情形下的适用标准。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "均衡饮食应包含适量的蛋白质、碳水化合物、脂肪、维生素和矿物质。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "如果今天允许学生晚交作业一天，明天他们就会要求取消所有作业。",
+    "label": "invalid",
+    "fallacy": "slippery slope"
+  },
+  {
+    "text": "你要么完全开放市场，要么就回到计划经济时代。",
+    "label": "invalid",
+    "fallacy": "false dichotomy"
+  },
+  {
+    "text": "我们要么接受这个不完美方案，要么永远停滞不前。",
+    "label": "invalid",
+    "fallacy": "false dichotomy"
+  },
+  {
+    "text": "在科学方法论中，可重复性是检验研究发现可靠性的重要标准。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该建筑采用了抗震设计，能够在一定程度上抵御地震带来的破坏。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "元分析综合了20项研究的数据，结论具有较高的统计功效。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "这位知名主持人支持这个政治观点，所以这个观点必然正确。",
+    "label": "invalid",
+    "fallacy": "appeal to authority"
+  },
+  {
+    "text": "根据双盲对照实验，这种新药在统计学上显著降低了患者的血压水平。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "我读的两本科幻小说都有外星人，所以科幻小说必须有外星人。",
+    "label": "invalid",
+    "fallacy": "hasty generalization"
+  },
+  {
+    "text": "我记住的都是符合我星座描述的特征，所以星座分析很准。",
+    "label": "invalid",
+    "fallacy": "confirmation bias"
+  },
+  {
+    "text": "该公司连续三个季度营收增长，主要得益于新产品线的成功推出。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "人口老龄化趋势意味着未来劳动力供给可能减少，同时养老支出压力会增加。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "她建议改革税收制度，本质上就是要抢劫富人的财产。",
+    "label": "invalid",
+    "fallacy": "strawman"
+  },
+  {
+    "text": "定期备份重要数据可以在设备故障时减少信息丢失的风险。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "过去十年的气象数据显示，全球平均气温呈上升趋势，这与温室气体排放量增加相关。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "社会保障体系的可持续性取决于缴费人数与领取人数的比例。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "税收政策的调整会影响收入分配格局，这是政府进行宏观调控的工具之一。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "她穿着那么花哨，肯定不专业，她的意见不用听。",
+    "label": "invalid",
+    "fallacy": "ad hominem"
+  },
+  {
+    "text": "团队合作中，明确分工和有效沟通是项目顺利推进的重要保障。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "在论证中，明确界定关键概念的含义有助于避免歧义和误解。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "儿童鞋码大小与阅读能力正相关，因此大脚意味着更聪明。",
+    "label": "invalid",
+    "fallacy": "correlation vs causation"
+  },
+  {
+    "text": "该法案经过了三读程序，并获得了立法机关的多数票通过。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "学习新技能需要持续的练习和适当的反馈，才能逐步掌握。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "如果公司给员工涨薪5%，接下来就会要求涨50%，然后公司就会破产。",
+    "label": "invalid",
+    "fallacy": "slippery slope"
+  },
+  {
+    "text": "一个论证若要成立，其前提必须为结论提供充分的支持。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "一位资深教授反对这个理论，所以这个理论一定是错的。",
+    "label": "invalid",
+    "fallacy": "appeal to authority"
+  },
+  {
+    "text": "允许安乐合法化，下一步就是强制老年人结束生命。",
+    "label": "invalid",
+    "fallacy": "slippery slope"
+  },
+  {
+    "text": "根据人口普查数据，该城市过去五年的人口增长率约为每年1.2%。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该语言课程从基础语法开始，逐步过渡到复杂句型和实际应用。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "冷战时期，美苏两国通过代理人战争和军备竞赛进行对抗。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "这个政策是公正的，因为它符合正义标准；而正义标准就是由这个政策定义的。",
+    "label": "invalid",
+    "fallacy": "circular reasoning"
+  },
+  {
+    "text": "这次航班延误了，所以这家航空公司总是不准时。",
+    "label": "invalid",
+    "fallacy": "hasty generalization"
+  },
+  {
+    "text": "疫苗的工作原理是通过模拟病原体刺激免疫系统产生抗体。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "诺贝尔奖得主国家人均巧克力消费量高，所以吃巧克力让人更聪明。",
+    "label": "invalid",
+    "fallacy": "correlation vs causation"
+  },
+  {
+    "text": "你建议增加教育投入，意思就是说现在的老师都不称职。",
+    "label": "invalid",
+    "fallacy": "strawman"
+  },
+  {
+    "text": "该电路设计符合安全标准，在过载情况下会自动切断电源。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "在控制变量的情况下，实验组的学习成绩确实高于对照组，说明该教学方法可能有效。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "这些活到100岁的老人都抽烟喝酒，说明抽烟喝酒有助于长寿。",
+    "label": "invalid",
+    "fallacy": "survivorship bias"
+  },
+  {
+    "text": "该论文通过同行评审，并在三个独立实验室中复现了实验结果。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "我遇到的三个销售员都很热情，所以所有销售员都是外向型人格。",
+    "label": "invalid",
+    "fallacy": "hasty generalization"
+  },
+  {
+    "text": "该城市的交通规划基于流量监测数据和未来增长预测。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "你说话带口音，你的论点肯定有问题。",
+    "label": "invalid",
+    "fallacy": "ad hominem"
+  },
+  {
+    "text": "他曾经为竞争对手工作过，所以他的批评一定带有偏见。",
+    "label": "invalid",
+    "fallacy": "ad hominem"
+  },
+  {
+    "text": "一个命题和它的否定不能同时为真，这是逻辑学的基本规律之一。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "义务教育法规定，适龄儿童和少年必须接受九年义务教育。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该数据库采用了主从复制架构，以提高读取性能和数据可用性。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "归纳推理的结论具有或然性，其可靠性取决于样本的代表性和数量。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "这位历史名人也持有类似观点，所以我们的观点有历史正当性。",
+    "label": "invalid",
+    "fallacy": "appeal to authority"
+  },
+  {
+    "text": "概率论提供了在不确定条件下进行理性决策的数学框架。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该企业的市场份额从15%下降到10%，同时竞争对手推出了更具性价比的产品。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "批判性思维要求对信息的来源、证据和推理过程进行审视。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "这位体育明星使用这个品牌的洗发水，所以这是最好的洗发水。",
+    "label": "invalid",
+    "fallacy": "appeal to authority"
+  },
+  {
+    "text": "我只记得那些应验的预言，所以算命是准确的。",
+    "label": "invalid",
+    "fallacy": "confirmation bias"
+  },
+  {
+    "text": "不投资加密货币，就等于放弃财务自由的机会。",
+    "label": "invalid",
+    "fallacy": "false dichotomy"
+  },
+  {
+    "text": "这个设计获得了行业大奖评委的认可，所以消费者一定会喜欢。",
+    "label": "invalid",
+    "fallacy": "appeal to authority"
+  },
+  {
+    "text": "你提倡素食，那就是要禁止所有人吃肉、剥夺我们的饮食自由。",
+    "label": "invalid",
+    "fallacy": "strawman"
+  },
+  {
+    "text": "你连个大学文凭都没有，凭什么讨论教育政策？",
+    "label": "invalid",
+    "fallacy": "ad hominem"
+  },
+  {
+    "text": "你连自己体重都管理不好，怎么能管理好一个团队？",
+    "label": "invalid",
+    "fallacy": "ad hominem"
+  },
+  {
+    "text": "我收集的所有成功案例都证明了这个理论，因此这个理论绝对正确。",
+    "label": "invalid",
+    "fallacy": "confirmation bias"
+  },
+  {
+    "text": "他之前犯过错误，所以他现在说的每一句话都是错的。",
+    "label": "invalid",
+    "fallacy": "ad hominem"
+  },
+  {
+    "text": "根据供需模型，当供给增加而需求不变时，均衡价格通常会下降。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "加密技术通过数学算法将明文转换为密文，以保护信息传输安全。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "丝绸之路促进了东西方之间的商品交换和文化交流。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "这家餐厅今天的汤很咸，所以这家餐厅所有菜都很难吃。",
+    "label": "invalid",
+    "fallacy": "hasty generalization"
+  },
+  {
+    "text": "气候变化科学共识基于多个独立研究机构的观测数据和模型预测。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "机械设备的定期维护可以延长其使用寿命，并减少突发故障的概率。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "这个产品是市场上最好的，因为最好的产品就是这个。",
+    "label": "invalid",
+    "fallacy": "circular reasoning"
+  },
+  {
+    "text": "她支持动物保护，那就是要把人类的需求置于动物之下。",
+    "label": "invalid",
+    "fallacy": "strawman"
+  },
+  {
+    "text": "该历史文献记录了当时社会的主要矛盾和普通民众的生活状况。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "城市要么拆除所有老旧小区，要么就永远无法现代化。",
+    "label": "invalid",
+    "fallacy": "false dichotomy"
+  },
+  {
+    "text": "我只关注那些减肥成功的案例，所以这种减肥方法对所有人都有效。",
+    "label": "invalid",
+    "fallacy": "confirmation bias"
+  },
+  {
+    "text": "充足的睡眠对维持认知功能和身体健康具有重要作用。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "你这么年轻，怎么可能理解复杂的经济问题。",
+    "label": "invalid",
+    "fallacy": "ad hominem"
+  },
+  {
+    "text": "这个理论正确，因为它被证明了；它被证明了，因为这个理论是正确的。",
+    "label": "invalid",
+    "fallacy": "circular reasoning"
+  },
+  {
+    "text": "多元文化政策旨在促进不同背景群体之间的相互理解与尊重。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "我在北京遇到两个不礼貌的人，所以北京人都不友好。",
+    "label": "invalid",
+    "fallacy": "hasty generalization"
+  },
+  {
+    "text": "他是个有钱人，所以他的慈善建议只是为了避税。",
+    "label": "invalid",
+    "fallacy": "ad hominem"
+  },
+  {
+    "text": "研究发现，喝咖啡的人寿命更长，因此咖啡能延长寿命。",
+    "label": "invalid",
+    "fallacy": "correlation vs causation"
+  },
+  {
+    "text": "该政策实施后，相关部门发布了评估报告，列出了已实现的预期效果和存在的不足。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "央行加息通常会增加借贷成本，从而可能抑制过热的投资需求。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "如果不全面禁止社交媒体，青少年的心理健康就会彻底崩溃。",
+    "label": "invalid",
+    "fallacy": "false dichotomy"
+  },
+  {
+    "text": "这位亿万富翁选择了这个理财方案，所以普通人也应该照做。",
+    "label": "invalid",
+    "fallacy": "appeal to authority"
+  },
+  {
+    "text": "该实验设置了实验组和对照组，以排除安慰剂效应的影响。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "如果学校提供素食选项， eventually所有学生都会被强制吃素。",
+    "label": "invalid",
+    "fallacy": "slippery slope"
+  },
+  {
+    "text": "他私生活混乱，所以他的学术观点不可信。",
+    "label": "invalid",
+    "fallacy": "ad hominem"
+  },
+  {
+    "text": "我采访的五位医生都反对这项改革，所以整个医疗界都反对。",
+    "label": "invalid",
+    "fallacy": "hasty generalization"
+  },
+  {
+    "text": "你来自小城市，当然不懂大城市的交通规划。",
+    "label": "invalid",
+    "fallacy": "ad hominem"
+  },
+  {
+    "text": "教育研究表明，小班教学可以提供更多师生互动机会，但效果因情境而异。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "我认识的两个程序员都很内向，所以所有程序员都不善社交。",
+    "label": "invalid",
+    "fallacy": "hasty generalization"
+  },
+  {
+    "text": "如果允许基因编辑治疗疾病，人类很快就会开始设计超级士兵。",
+    "label": "invalid",
+    "fallacy": "slippery slope"
+  },
+  {
+    "text": "该产品的保修条款列明了保修范围、期限和除外责任。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "城市绿化率高的地区居民寿命更长，所以多种树就能让人长寿。",
+    "label": "invalid",
+    "fallacy": "correlation vs causation"
+  },
+  {
+    "text": "该卫星的发射窗口是根据轨道力学和气象条件精确计算的。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "今天限制一种言论，明天就会限制所有言论，最终变成极权社会。",
+    "label": "invalid",
+    "fallacy": "slippery slope"
+  },
+  {
+    "text": "该合同条款经双方协商一致，明确了各自的权利和义务。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "我只关注那些预测准确的专家，所以市场预测总是可靠的。",
+    "label": "invalid",
+    "fallacy": "confirmation bias"
+  },
+  {
+    "text": "二战期间，返航飞机机翼中弹最多，因此应加固机翼而非发动机舱。",
+    "label": "invalid",
+    "fallacy": "survivorship bias"
+  },
+  {
+    "text": "圣经是神的话语，因为圣经上写着它是神的话语。",
+    "label": "invalid",
+    "fallacy": "circular reasoning"
+  },
+  {
+    "text": "阅读多种来源的信息，有助于形成对复杂议题的更全面理解。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该物理定律在宏观低速条件下已被无数次实验验证，适用范围明确。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "他反对这项军事开支，等于说我们的军队应该毫无防备。",
+    "label": "invalid",
+    "fallacy": "strawman"
+  },
+  {
+    "text": "该理论基于可观测的现象，并提出了可证伪的预测。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "环境保护与经济发展并非完全对立，绿色产业可以成为新的经济增长点。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "网络安全防护需要多层次策略，包括防火墙、入侵检测和用户认证等。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该哲学家的思想体系建立在逻辑推理和对前人理论的批判性继承之上。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "类比推理的可靠性取决于两个对象之间相似属性的相关程度。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "对方说要加强环保监管，他实际上是想让工厂全部倒闭、大家都失业。",
+    "label": "invalid",
+    "fallacy": "strawman"
+  },
+  {
+    "text": "该社区通过居民议事会机制，让居民直接参与公共事务的决策过程。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "古典音乐家的作品流传至今，证明古典音乐比现代音乐更优秀。",
+    "label": "invalid",
+    "fallacy": "survivorship bias"
+  },
+  {
+    "text": "使用防晒霜可以减少紫外线对皮肤的伤害，降低晒伤和皮肤癌的风险。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该市场调研覆盖了目标用户群体的多个细分维度，样本具有代表性。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "你批评这个软件有bug，就是在否定整个开发团队的努力。",
+    "label": "invalid",
+    "fallacy": "strawman"
+  },
+  {
+    "text": "你支持远程办公，就是想让办公室文化彻底消失、城市商业区荒废。",
+    "label": "invalid",
+    "fallacy": "strawman"
+  },
+  {
+    "text": "昨天看到一只黑色的乌鸦，所以天下乌鸦一般黑。",
+    "label": "invalid",
+    "fallacy": "hasty generalization"
+  },
+  {
+    "text": "这些幸存下来的创业公司都采用了A商业模式，所以A模式必然成功。",
+    "label": "invalid",
+    "fallacy": "survivorship bias"
+  },
+  {
+    "text": "古代建筑历经千年不倒，说明古代建筑技术远超现代。",
+    "label": "invalid",
+    "fallacy": "survivorship bias"
+  },
+  {
+    "text": "样本量为5000人的全国性调查，其置信区间为95%，误差范围为±2%。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "该食谱需要先将烤箱预热至180摄氏度，然后再放入食材烘烤。",
+    "label": "valid",
+    "fallacy": "none"
+  },
+  {
+    "text": "我们班的三个留学生数学都很好，所以所有留学生都擅长数学。",
+    "label": "invalid",
+    "fallacy": "hasty generalization"
+  }
+]
