@@ -19,16 +19,17 @@ Break down a statement and see its logic — analyzing propositional structure, 
 - **Frontend**: React, Vite
 
 ## Project Structure
-
+​```
 logic_agent/
-├── agent/ # Core agent logic
-├── tools/ # Analysis tools (fallacy, bias, counterexample, classifier)
-├── data/ # Logical fallacy dataset
-├── web/ # Frontend (React + Vite)
-├── api.py # FastAPI backend entry point
-├── main.py # CLI entry point
-├── requirements.txt # Python dependencies
-└── start.sh / start.ps1 # One-click startup scripts
+├── agent/              # Core agent logic
+├── tools/              # Analysis tools (fallacy, bias, counterexample, classifier)
+├── data/                # Logical fallacy dataset
+├── web/                 # Frontend (React + Vite)
+├── api.py               # FastAPI backend entry point
+├── main.py              # CLI entry point
+├── requirements.txt      # Python dependencies
+└── start.sh / start.ps1  # One-click startup scripts
+​```
 ## Getting Started
 
 ### 1. Clone the repository
