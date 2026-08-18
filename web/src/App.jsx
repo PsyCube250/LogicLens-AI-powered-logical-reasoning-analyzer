@@ -37,8 +37,17 @@ function EmptyState() {
 function Result({ result }) {
   const claim = result.claim || {};
   const counterexample = result.counterexample;
+  const factCheck = result.fact_check;
   const fallacy = result.fallacy || {};
   const bias = result.bias || {};
+
+  const statusLabel = {
+    accurate: "准确",
+    inaccurate: "不准确",
+    outdated: "已过时",
+    partially_accurate: "部分准确",
+    unverifiable: "无法核实",
+  };
 
   return (
     <div className="results">
@@ -84,6 +93,40 @@ function Result({ result }) {
       ) : (
         <Section title="反例分析">
           <div className="not-applicable">当前命题不要求生成反例。</div>
+        </Section>
+      )}
+
+      {factCheck && (
+        <Section title="事实核查">
+          <div className="tag-row">
+            <span className={`tag ${factCheck.verification_status === "accurate" ? "primary" : "warning"}`}>
+              {statusLabel[factCheck.verification_status] || value(factCheck.verification_status)}
+            </span>
+          </div>
+          <div className="claim-flow">
+            <div><small>陈述数据</small><strong>{value(factCheck.reported_value)}</strong></div>
+            <div className="arrow">→</div>
+            <div><small>核实结果</small><strong>{value(factCheck.verified_value)}</strong></div>
+          </div>
+          <div className="facts two">
+            <div><span>可信度</span><b>{value(factCheck.confidence)}</b></div>
+          </div>
+          <p className="reason">{value(factCheck.reason)}</p>
+          {factCheck.note && (
+            <p className="muted">说明：{factCheck.note}</p>
+          )}
+          {factCheck.evidence_sources && factCheck.evidence_sources.length > 0 && (
+            <div className="sources">
+              <span>信息来源</span>
+              <ul>
+                {factCheck.evidence_sources.map((url) => (
+                  <li key={url}>
+                    <a href={url} target="_blank" rel="noreferrer">{url}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </Section>
       )}
 
