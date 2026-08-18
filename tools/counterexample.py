@@ -1,5 +1,7 @@
-from urllib import response
+from unittest import result
+
 from llm import DeepSeekLLM
+from tools.search import SearchTool
 import json
 
 
@@ -13,11 +15,12 @@ class CounterexampleGenerator:
 工具需要：
 1. 判断原陈述的结论类型
 2. 判断结论强度
-3. 生成针对性反例
-4. 判断反例是否真正满足原命题的前提
-5. 判断反例是否违反原命题结论
-6. 评估反例强度
-7. 评估反例可信度
+3. 判断是否需要检索权威数据支撑反例
+4. （需要时）检索权威信源，生成基于事实的反例；否则生成理论构造反例
+5. 判断反例是否真正满足原命题的前提
+6. 判断反例是否违反原命题结论
+7. 评估反例强度
+8. 评估反例可信度
 """
 
     schema = {
@@ -40,8 +43,64 @@ class CounterexampleGenerator:
 
     def __init__(self):
         self.llm = DeepSeekLLM()
+        self.search_tool = SearchTool()
 
+    # ----------------------------------------------------------------
+    # 第一步：判断这次反例是否需要检索权威数据支撑
+    # ----------------------------------------------------------------
+    def _judge_need_search(self, text, claim):
+        prompt = f"""
+你是一个判断助手。判断下面这个陈述的反例，是否需要检索权威统计数据/新闻/研究来增强说服力，
+还是纯逻辑结构反例就足够（比如反驳一个抽象的全称命题，不涉及具体现实数据）。
+
+【原始陈述】
+{text}
+
+【命题分类】
+{claim}
+
+判断标准：
+- 如果陈述涉及具体的社会现象、群体行为、统计规律（比如"程序员都喜欢游戏"这种可以用调查数据验证/反驳的陈述），
+  needs_search = true，并给出 1 个适合搜索引擎检索的中文关键词短语（query）。
+- 如果陈述是抽象的价值判断或纯逻辑命题，检索现实数据意义不大，needs_search = false，query 留空。
+
+严格输出 JSON，不要任何多余文字：
+
+{{
+    "needs_search": true or false,
+    "query": "..."
+}}
+"""
+        response = self.llm.chat(
+            [
+                {"role": "system", "content": "你是判断助手，只输出JSON。"},
+                {"role": "user", "content": prompt},
+            ],
+            [],
+        )
+
+        content = response.content.strip()
+        if content.startswith("```"):
+            content = content.strip("`")
+            if content.startswith("json"):
+                content = content[4:].strip()
+
+        try:
+            return json.loads(content)
+        except json.JSONDecodeError:
+            return {"needs_search": False, "query": ""}
+
+    # ----------------------------------------------------------------
+    # 第二步：生成反例（可选带检索到的权威资料作为上下文）
+    # ----------------------------------------------------------------
     def run(self, text, claim=None):
+
+        judge = self._judge_need_search(text, claim)
+        evidence_block = "（本次反例不涉及具体现实数据，采用逻辑结构反例）"
+
+        if judge.get("needs_search") and judge.get("query"):
+            results = self.search_tool.search(judge["query"])
+            evidence_block = self.search_tool.format_for_prompt(results)
 
         prompt = f"""
 你是一个严格的逻辑反例分析器。
@@ -74,6 +133,18 @@ class CounterexampleGenerator:
 - requires_counterexample
 
 你的任务只是基于这些结构生成反例。
+
+--------------------------------
+检索到的权威信源资料（可能为空）
+--------------------------------
+
+{evidence_block}
+
+如果上面有真实检索结果，优先基于这些资料构造反例，并在 evidence_type 里标注 "empirical_data"，
+在 reason 中注明引用的来源编号（如 [1]）。
+
+如果没有检索结果或检索结果与本命题无关，则使用逻辑构造反例，
+evidence_type 标注 "theoretical_construct"，不要编造不存在的统计数据或来源。
 
 --------------------------------
 Step 1：理解逻辑结构
@@ -148,7 +219,7 @@ Step 2：生成反例
 
 优先使用明确标记的理论构造。
 
-不要编造真实人物。
+不要编造真实人物，不要编造不存在的统计数据或引用来源。
 
 --------------------------------
 Step 3：验证
@@ -199,6 +270,7 @@ confidence：
     "strength": "...",
     "confidence": 0.0,
     "evidence_type": "...",
+    "evidence_sources": ["..."],
     "reason": "...",
     "limitations": "..."
 }}
@@ -227,4 +299,11 @@ confidence：
             if content.startswith("json"):
                 content = content[4:].strip()
 
+#-----------------------------------------------------------------------
+
+        result = json.loads(content)
+        print("DEBUG evidence_sources:", result.get("evidence_sources"))
+        return result
+
+#-----------------------------------------------------------------------
         return json.loads(content)
