@@ -1,5 +1,6 @@
 from tools.claim_classifier import ClaimClassifier
 from tools.counterexample import CounterexampleGenerator
+from tools.fact_checker import FactChecker
 from tools.fallacy import FallacyDetector
 from tools.bias import BiasDetector
 
@@ -9,6 +10,7 @@ class LogicAgent:
     def __init__(self):
         self.classifier = ClaimClassifier()
         self.counterexample = CounterexampleGenerator()
+        self.fact_checker = FactChecker()
         self.fallacy = FallacyDetector()
         self.bias = BiasDetector()
 
@@ -23,14 +25,43 @@ class LogicAgent:
         claim_type = claim.get("claim_type")
 
         # ========================================
-        # Step 2: Counterexample
+        # Step 2a: Counterexample
         # ========================================
+        #
+        # 适用于可以用"满足前提但违反结论"的单个实例直接推翻的
+        # 关系型命题（universal / necessary / sufficient /
+        # generalization），也适用于趋势/存在性命题
+        # （probabilistic / existential）—— 这类命题虽然不能被
+        # 单个反例直接推翻，但可以用真实统计数据去验证/反驳其
+        # 趋势判断，交给 CounterexampleGenerator 内部判断是否
+        # 需要检索。
+
+        evidence_backed_types = {
+            "probabilistic",
+            "existential",
+        }
 
         counterexample = None
 
-        if claim.get("requires_counterexample", False):
+        if claim.get("requires_counterexample", False) or claim_type in evidence_backed_types:
 
             counterexample = self.counterexample.run(
+                text,
+                claim
+            )
+
+        # ========================================
+        # Step 2b: Fact check
+        # ========================================
+        #
+        # statistical 类命题本身就是在陈述一个数据/比例，
+        # 不适用"反例"框架，而是需要核实这个数据本身准不准确。
+
+        fact_check = None
+
+        if claim_type == "statistical":
+
+            fact_check = self.fact_checker.run(
                 text,
                 claim
             )
@@ -103,6 +134,8 @@ class LogicAgent:
             },
 
             "counterexample": counterexample,
+
+            "fact_check": fact_check,
 
             "fallacy": {
                 "name": fallacy.get("fallacy"),
